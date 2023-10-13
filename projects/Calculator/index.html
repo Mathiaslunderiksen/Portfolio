@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator – Mathias Lund Eriksen</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Slider -->
+   <div class="slider">
+        <!-- Img current in slider -->
+        <img class="slider-slide" src="" alt="">
+   </div>
+
+   <!-- Heading -->
+   <h1 class="heading">Calculator <span class="heading-span">by Mathias Lund Eriksen</span></h1>
+
+   <!-- Calculator -->
+   <div class="calculator-container">
+        <div class="calculator-inner">
+        <form id="form">
+            <input type="text" name="text" id="text" placeholder="Calculate here">
+        </form>
+        </div>
+   </div>
+
+   <!-- Suggestion button -->
+   <button class="suggestion-btn">Help improve!</button>
+
+   <!-- Suggestion box default: hidden -->
+   <div class="suggestion-box-container hidden">
+        <div class="suggestion-form">
+            <span class="close">&times;</span>
+            <h2 class="suggestion-heading">Send me a suggestion on how to improve the calculator!</h2>
+
+            <!-- Suggestion form -->
+            <form id="suggestion-form">
+                <input type="text" name="name" required minlength="2" maxlength="30" placeholder="Name">
+                <input type="text" name="email" required minlength="4" maxlength="60" placeholder="Email">
+                <textarea name="textarea" id="textarea" cols="30" rows="10" required placeholder="Message..."></textarea>
+                <input type="submit" name="submit" value="Send">
+            </form>
+            <!-- Suggestion success message -->
+            <div class="msg"></div>
+        </div>
+   </div>
+
+</body>
+</html>

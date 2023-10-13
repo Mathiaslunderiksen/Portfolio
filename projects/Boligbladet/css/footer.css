@@ -1,0 +1,118 @@
+/* The footer */
+footer{
+    margin-top: 100px;
+    padding: 90px 20px;
+    background-color: #707070;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "a a a"
+    "b b b"
+    "c c c";
+    row-gap: 50px;
+}
+
+/* Footer contact */
+.footer-contact{
+    grid-area: a;
+    place-self: center;
+    text-align: center;
+}
+
+/* Footer information */
+.footer-information{
+    grid-area: b;
+    place-self: center;
+    text-align: center;
+}
+
+/* Footer information links */
+.footer-information a{
+    text-decoration: none;
+}
+
+.footer-information a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+/* Footer social */
+.footer-social{
+    grid-area: c;
+    place-self: center;
+}
+
+/* Footer headings */
+.footer-heading{
+    font-size: clamp(1.4rem, 1.278rem + 0.522vw, 1.8rem);
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Footer text */
+.footer-text{
+    font-size: clamp(1.4rem, 1.339rem + 0.261vw, 1.6rem);
+    color: white;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+/* Footer logo */
+.footer-logo{
+    width: 140px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Footer social logos */
+.footer-social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Footer social logos image */
+.footer-social-icon img{
+    width: 45px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Hover effect on footer social logos image */
+.footer-social-icon img:hover{
+    opacity: 0.7;
+}
+
+/* Media querie for above 768px */
+@media (min-width: 768px){
+    /* The footer */
+    footer{
+        grid-template-areas: 
+            "a c b"
+            "a c b"
+            "a c b";
+    }
+
+    /* The footer logo */
+    .footer-logo{
+        width: 170px;
+    }
+
+    /* Footer contact */
+    .footer-contact{
+        text-align: left;
+    }
+
+    /* Footer information */
+    .footer-information{
+        text-align: right;
+    }
+}   

@@ -1,0 +1,156 @@
+[
+    {
+        "id": 0,
+        "image": "./assets/one.jpeg",
+        "name": "Team Alpha",
+        "ageOne": 28,
+        "ageTwo": 29,
+        "level": "Pro",
+        "description": "Hello, we're Team Alpha! We're seasoned Padel players seeking a challenging match. We're open to playing against couples of any age, as long as you're at a professional level like us.",
+        "liked": "notDecided",
+        "distanceAway": 80
+    },
+    {
+        "id": 1,
+        "image": "./assets/two.jpeg",
+        "name": "Riley & Jordan",
+        "ageOne": 27,
+        "ageTwo": 25,
+        "level": "Pro",
+        "description": "Hey there, we're Riley and Jordan. We're competitive Padel players looking for a spirited match. Our skills are at a professional level, and we're eager to face couples who share our enthusiasm, regardless of age.",
+        "liked": "notDecided",
+        "distanceAway": 182
+    },
+    {
+        "id": 2,
+        "image": "./assets/three.jpeg",
+        "name": "Ace Duo",
+        "ageOne": 35,
+        "ageTwo": 34,
+        "level": "Intermediate",
+        "description": "Hello, we're the Ace Duo! We're an intermediate-level Padel tennis couple looking for a friendly match. We prefer opponents around our age, but skill level matters more to us than age.",
+        "liked": "notDecided",
+        "distanceAway": 42
+    },
+    {
+        "id": 3,
+        "image": "./assets/four.jpeg",
+        "name": "Mia & Liam",
+        "ageOne": 61,
+        "ageTwo": 67,
+        "level": "Amateur",
+        "description": "Hi there, we're Mia and Liam. We're amateur Padel enthusiasts eager to improve our game. We're open to playing against couples of any age, as long as you're at a similar skill level.",
+        "liked": "notDecided",
+        "distanceAway": 171
+    },
+    {
+        "id": 4,
+        "image": "./assets/five.webp",
+        "name": "Champions United",
+        "ageOne": 23,
+        "ageTwo": 25,
+        "level": "Pro",
+        "description": "Greetings, we are Champions United! Seasoned Padel professionals seeking a challenging match. We'd prefer opponents at a professional level, and age is not a concern for us.",
+        "liked": "notDecided",
+        "distanceAway": 101
+    },
+    {
+        "id": 5,
+        "image": "./assets/six.webp",
+        "name": "Olivia & Ethan",
+        "ageOne": 30,
+        "ageTwo": 31,
+        "level": "Intermediate",
+        "description": "Hello, we're Olivia and Ethan, an intermediate-level Padel duo. We're looking for like-minded players who are around our age, but we're open to friendly matches with players of any age who share our skill level.",
+        "liked": "notDecided",
+        "distanceAway": 92
+    },
+    {
+        "id": 6,
+        "image": "./assets/seven.jpeg",
+        "name": "Dynamic Duet",
+        "ageOne": 29,
+        "ageTwo": 31,
+        "level": "Advanced",
+        "description": "Hey, we're the Dynamic Duet! We're advanced Padel players looking for some intense matches. We're open to playing against couples of any age, as long as you can match our high skill level.",
+        "liked": "notDecided",
+        "distanceAway": 5
+    },
+    {
+        "id": 7,
+        "image": "./assets/eight.jpeg",
+        "name": "Sophie & Lucas",
+        "ageOne": 26,
+        "ageTwo": 28,
+        "level": "Intermediate",
+        "description": "Hi there, we're Sophie and Lucas, an intermediate-level Padel pair. We're keen on friendly competition and prefer opponents around our age, but we're open to all skill levels.",
+        "liked": "notDecided",
+        "distanceAway": 1
+    },
+    {
+        "id": 8,
+        "image": "./assets/nine.jpeg",
+        "name": "Masters of Padel",
+        "ageOne": 45,
+        "ageTwo": 50,
+        "level": "Pro",
+        "description": "Greetings, we are the Masters of Padel! We're highly skilled Padel professionals seeking challenging matches. We prefer opponents at a professional level, and age is not a concern for us.",
+        "liked": "notDecided",
+        "distanceAway": 66
+    },
+    {
+        "id": 9,
+        "image": "./assets/ten.jpeg",
+        "name": "Ava & Noah",
+        "ageOne": 76,
+        "ageTwo": 77,
+        "level": "Amateur",
+        "description": "Hello, we're Ava and Noah, an amateur Padel couple. We're here for fun and improving our game. We'd love to play with couples around our age, but we're open to all skill levels.",
+        "liked": "notDecided",
+        "distanceAway": 147
+    },
+    {
+        "id": 10,
+        "image": "./assets/eleven.webp",
+        "name": "Swift Strokes",
+        "ageOne": 35,
+        "ageTwo": 33,
+        "level": "Intermediate",
+        "description": "Greetings! We're Swift Strokes, an intermediate-level Padel team. We're looking for couples who are around our age and share our passion for the game.",
+        "liked": "notDecided",
+        "distanceAway": 62
+    },
+    {
+        "id": 11,
+        "image": "./assets/twelve.jpeg",
+        "name": "Luna & Diego",
+        "ageOne": 28,
+        "ageTwo": 30,
+        "level": "Pro",
+        "description": "Hello, we're Luna and Diego, a professional Padel couple. We're seeking challenging matches with opponents who are equally skilled, and age is not a barrier for us.",
+        "liked": "notDecided",
+        "distanceAway": 4
+    },
+    {
+        "id": 12,
+        "image": "./assets/zero.webp",
+        "name": "Golden Paddlers",
+        "ageOne": 33,
+        "ageTwo": 36,
+        "level": "Intermediate",
+        "description": "Hey there, we're the Golden Paddlers! We're an intermediate-level Padel team with a love for the game. We'd enjoy matches with couples who are close to our age and skill level.",
+        "liked": "notDecided",
+        "distanceAway": 17
+    },
+    {
+        "id": 13,
+        "image": "./assets/thirteen.webp",
+        "name": "Ella & Leo",
+        "ageOne": 26,
+        "ageTwo": 32,
+        "level": "Amateur",
+        "description": "Hi, we're Ella and Leo, an amateur Padel couple. We're looking to have fun on the court and improve our game. We're open to playing with couples of any age and skill level.",
+        "liked": "notDecided",
+        "distanceAway": 195
+    }
+]

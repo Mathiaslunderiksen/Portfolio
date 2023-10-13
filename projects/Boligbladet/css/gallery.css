@@ -1,0 +1,116 @@
+/* The gallery container */
+.gallery{
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+/* The heading */
+.gallery-heading{
+    font-family: 'Bodoni Moda', serif;
+    text-align: center;
+    font-size: clamp(2.6rem, 1.865rem + 3.135vw, 5rem);
+    color: #707070;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* The span (Søger du) */
+.gallery-span{
+    font-size: clamp(1.6rem, 1.171rem + 1.829vw, 3rem);
+    color: #707070;
+    font-weight: 400;
+}
+
+/* Gallery images */
+.gallery-inner img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Hover effect on the gallery images */
+.gallery-inner img:hover{
+    opacity: 0.7;
+}
+
+/* Gallery-inner contains both an image and the underneath text */
+.gallery-inner{
+    width: 90%;
+    margin: 0 auto;        
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+    column-gap: 125px;
+    row-gap: 50px;
+}
+
+/* The gallery text (under img) */
+.gallery-inner-text{
+    font-size: clamp(1.4rem, 1.278rem + 0.522vw, 1.8rem);
+    font-weight: 700;
+    color: #E79899;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+/* Gallery button container */
+.gallery-button-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Gallery button */
+.gallery-btn{
+    background-color: #DEC161;
+    border: none;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: clamp(1.2rem, 1.016rem + 0.784vw, 1.8rem);
+    padding: 5px 90px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+/* Hover effect on the gallery button */
+.gallery-btn:hover{
+    background-color: #E79899;
+}
+
+/* Media querie for above 768px */
+@media (min-width:768px){
+
+    /* Gallery-inner contains both an image and the underneath text */
+    .gallery-inner{
+        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+        row-gap: 90px;
+    }
+
+    /* Gallery button */
+    .gallery-btn{
+        padding: 5px 220px;
+    }
+}
+
+/* Media querie for above 1000px */
+@media (min-width:1000px){
+    
+    /* Gallery-inner contains both an image and the underneath text */
+    .gallery-inner{
+        width: 100%;
+    }
+}
+
+/* Media querie for under 300px */
+@media (max-width: 300px){
+    /* Gallery button */
+    .gallery-btn{
+        padding: 5px 5px;
+    }
+}

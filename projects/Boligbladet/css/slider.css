@@ -1,0 +1,72 @@
+/* Slider container */
+.slider{
+    position: relative;
+}
+
+/* Slider image */
+.slider-slides .slider-slide{
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Box with text and button */
+.slider-box{
+    max-width: 900px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 30%;
+}
+
+/* Slider heading */
+.slider-heading{
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    font-size: clamp(3rem, 2.082rem + 3.918vw, 6rem);
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+/* Slider button */
+.slider-btn{
+    text-decoration: none;
+    background-color: #E79899;
+    color: #FFFFFF;
+    font-size: clamp(1.2rem, 0.894rem + 1.306vw, 2.2rem);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 5px 85px;
+}
+
+/* Hover effect on slider button */
+.slider-btn:hover{
+    background-color: #DEC161;
+}
+
+/* Media querie for above 768px */
+@media (min-width: 768px){
+
+    /* Box with text and button */
+    .slider-box{
+        margin-right: 0;
+        bottom: 30%;
+    }
+
+    /* Slider button */
+    .slider-btn{
+        padding: 5px 230px;
+    }
+}
+
+/* Media querie for under 300px */
+@media (max-width: 300px){
+    /* Slider button */
+    .slider-btn{
+        padding: 5px 5px;
+    }
+}

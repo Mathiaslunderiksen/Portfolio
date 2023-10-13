@@ -1,0 +1,18 @@
+/* Container for all profiles */
+.liked-container{
+    padding-left: 50px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
+    row-gap: 40px;
+    justify-items: center;
+}
+
+@media (min-width: 900px){
+    .liked-container{
+        padding-left: 0;
+    }
+}

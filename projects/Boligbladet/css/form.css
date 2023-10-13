@@ -1,0 +1,150 @@
+/* Form container */
+.form-container{
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+/* Form-inner contains div with text and the form */
+.form-inner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* The div with text */
+.form-text-box{
+    width: 90%;
+    text-align: center;
+}
+
+/* First heading */
+.form-text-heading-one{
+    font-family: 'Bodoni Moda', serif;
+    font-size: clamp(2.6rem, 1.865rem + 3.135vw, 5rem);
+    color: #707070;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+/* Second heading */
+.form-text-heading-two{
+    margin-bottom: 30px;
+    font-size: clamp(2rem, 1.694rem + 1.306vw, 3rem);
+    color: #707070;
+    font-weight: 400;
+}
+
+/* The text */
+.form-text{
+    font-size: clamp(1.6rem, 1.539rem + 0.261vw, 1.8rem);
+    color: #707070;
+}
+
+/* The form */
+form{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Labels in the form */
+label{
+    color: #E79899;
+    font-size: clamp(1.4rem, 1.278rem + 0.522vw, 1.8rem);
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+/* Text, email and select inputs */
+input,select{
+    display: block;
+}
+
+/* Text, email and select inputs */
+input[type="text"], input[type="email"], select{
+    margin-top: 10px;
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px solid #707070;
+    color: #707070;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+/* Select input */
+select{
+    margin-bottom: 20px;
+}
+
+/* The submit button */
+input[type="submit"]{
+    width: 100%;
+    padding: 7px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #DEC161;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    font-size: clamp(1.2rem, 1.016rem + 0.784vw, 1.8rem);
+}
+
+/* Hover effect on the submit button */
+input[type="submit"]:hover{
+    background-color: #E79899;
+}
+
+/* When the three inputs are valid */
+input[type="text"]:valid, input[type="email"]:valid, select:valid{
+    border: 2px solid green;
+}
+
+/* Default focus hidden */
+input:focus{
+    outline:transparent;
+}
+
+/* Div with success message */
+.msg{
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    color: #707070;
+}
+
+/* Media querie for above 768px */
+@media (min-width:768px){
+    /* Form-inner contains div with text and the form */
+    .form-inner{
+        flex-direction: row;
+        padding: 20px;
+        gap: 100px;
+    }
+
+    /* The div with text */
+    .form-text-box{
+        text-align: left;
+        width: 100%;
+    }
+
+    /* The form */
+    form{
+        width: 100%;
+    }
+}
+
+/* Media querie for above 1366px */
+@media (min-width:1366px){
+    .form-inner{
+        padding: 0;
+    }
+}

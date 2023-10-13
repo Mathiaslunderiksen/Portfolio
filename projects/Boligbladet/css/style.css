@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* CSS RESET START */
+
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+
+html {
+font-family: 'Quicksand', sans-serif;
+font-size: 0.625rem;
+scroll-behavior: smooth;
+}
+
+/* 
+font-family: 'Bodoni Moda', serif;
+ */
+
+body {
+font-size: 1.6rem;
+}
+
+/* CSS RESET END */
+
+/* nav logo */
+.logo{
+	max-width: 70px;
+	height: auto;
+	object-fit: cover;
+}
+
+
+/* The main nav */
+.main-nav{
+    display: flex;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    left: 0;
+    right: 0;
+	z-index: 1000;
+	position: relative;
+}
+
+/* The burger-btn */
+.burger-btn{
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+}
+
+/* Hover effect on burger-btn */
+.burger-btn:hover{
+    opacity: 0.8;
+}
+
+/* Each of the three bars */
+.bar{
+    width: 100%;
+    height: 4px;
+    margin-bottom: 5px;
+    transition: 300ms;
+    background-color: #E79899;
+}
+
+/* When active applied on bar (rotate first) */
+.bar:nth-child(1).active{
+    transform: rotate(45deg) translate(2px, 2px);
+	background-color: white;
+}
+
+/* When active applied on bar (hide second) */
+.bar:nth-child(2).active{
+    display: none;
+}
+
+/* When active applied on bar (rotate third) */
+.bar:nth-child(3).active{
+    transform: rotate(-45deg) translate(4.5px, -4.5px);
+	background-color: white;
+}
+
+/* List with nav items (hidden under 768px) */
+.nav-ul{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    place-content: center;
+    list-style-type: none;
+    z-index: 0;
+}
+
+/* When show applied on nav-ul */
+.nav-ul.show{
+    display: grid;
+}
+
+/* Each of the nav items */
+.nav-item{
+    margin-bottom: 20px;
+}
+
+/* Each of the nav links */
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 22px;
+    position: relative;
+	text-transform: uppercase;
+	letter-spacing: 1.6px;
+}
+
+/* Hover effect on nav links */
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+/* Nav end */
+
+/* Media querie for above 768px */
+@media (min-width: 768px){
+    /* Burger-btn hidden */
+    .burger-btn{
+        display: none;
+    }
+
+    /* Nav-ul appears instead of burger-btn */
+    .nav-ul{
+        display: flex;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        background-color: transparent;
+        gap: 50px;
+    }
+
+    /* Each of the nav links */
+	.nav-link{
+		color: #707070;
+        font-size: 16px;
+	}
+
+    /* Nav Logo */
+	.logo{
+		max-width: 157px;
+	}
+}

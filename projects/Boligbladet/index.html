@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boligbladet</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/article.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- JS -->
+    <script src="./js/script.js" defer></script>
+    <script src="./js/slider.js" defer></script>
+    <script src="./js/form.js" defer></script>
+</head>
+
+<body>
+   
+    <!-- NAV START -->
+    <nav class="main-nav">
+        <!-- The logo -->
+        <img class="logo" src="assets/logo/BoligBladetLogo-707070.png" alt="Boligbladet logo">
+        <!-- The burger button -->
+        <button class="burger-btn">
+            <!-- Each bar of the burger button -->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <!-- Unordered list with nav-items -->
+        <ul class="nav-ul">
+            <!-- Each nav-item -->
+            <li class="nav-item"><a href="#inspiration" class="nav-link">Inspiration</a></li>
+            <li class="nav-item"><a href="#article" class="nav-link">Artikler</a></li>
+            <li class="nav-item"><a href="#subscription" class="nav-link">Abonnement</a></li>
+        </ul>
+
+    </nav>
+    <!-- NAV END -->
+
+    <!-- SLIDER START -->
+    <!-- Slider that contains slider-slides -->
+    <section class="slider">
+        <!-- Slider-box contains both the heading and the button -->
+        <div class="slider-box">
+            <h1 class="slider-heading">Dit foretrukne online boligmagasin</h1>
+            <a class="slider-btn" href="linkpoint.html">Læs mere</a>
+        </div>
+        <!-- Slider-slides contains the img slider-slide -->
+        <div class="slider-slides">
+            <img class="slider-slide" src="" alt="">
+        </div>
+
+    </section>
+    <!-- SLIDER END -->
+
+    <!-- GALLERY START -->
+    <section class="gallery" id="inspiration">
+        <!-- Gallery heading -->
+        <h2 class="gallery-heading"><span class="gallery-span">Søger du</span> <br> inspiration til boligindretning?</h2>
+        <!-- Container for four divs -->
+        <div class="gallery-inner">
+            <!-- Each div contains an image and a text -->
+            <div>
+                <a class="gallery-inner-img" href="linkpoint.html"><img src="assets/images/kitchen.jpg" alt="Kitchen"></a>
+                <p class="gallery-inner-text">Køkkenet</p>
+            </div>
+            <div>
+                <a class="gallery-inner-img" href="linkpoint.html"><img src="assets/images/bathroom.jpg" alt="Bathroom"></a>
+                <p class="gallery-inner-text">Badeværelset</p>
+            </div>
+            <div>
+                <a class="gallery-inner-img" href="linkpoint.html"><img src="assets/images/livingroom.jpg" alt="Livingroom"></a>
+                <p class="gallery-inner-text">Stuen</p>
+            </div>
+            <div>
+                <a class="gallery-inner-img" href="linkpoint.html"><img src="assets/images/garden.jpg" alt="Garden"></a>
+                <p class="gallery-inner-text">Haven</p>
+            </div>
+        </div>
+
+        <!-- The gallery button -->
+        <div class="gallery-button-container"><a class="gallery-btn" href="linkpoint.html">Se alle rum</a></div>
+    </section>
+    <!-- GALLERY END -->
+
+    <!-- ARTICLE START -->
+    <section class="article" id="article">
+        <!-- article-inner contains the img and a div -->
+        <div class="article-inner">
+            <img class="article-img" src="assets/images/article.jpg" alt="Backgroundimage">
+            <!-- article-box contains the heading and the button -->
+            <div class="article-box">
+                <p class="article-label">UGENS MEST LÆSTE</p>
+                <h2 class="article-heading">“Thomas var mest til neutrale farver, men pludselig er en farve vokset på ham…”</h2>
+                <a class="article-btn" href="linkpoint.html">Læs artiklen her</a>
+            </div>
+        </div>
+    </section>
+    <!-- ARTICLE END -->
+
+    <!-- FORM START -->
+    <section class="form-container" id="subscription">
+        <!-- Form-inner contains div with text and the form -->
+        <div class="form-inner">
+            <!-- form-text-box contains the two headings and the text below -->
+            <div class="form-text-box">
+                <h2 class="form-text-heading-one">Abonnér på vores online magasin</h2>
+                <h3 class="form-text-heading-two">Og spar op til 379 kr</h3>
+                <p class="form-text">Når du udfylder formularen, får du fakturaen tilsendt på mail. Husk at tjekke dit spamfilter!</p>
+            </div>
+            <!-- The form which has 3 inputs and a button -->
+            <form id="form">
+                <label>FULDE NAVN<input type="text" name="name" id="name" minlength="2" maxlength="40" required></label>
+                <label>EMAIL<input type="email" name="email" id="email" minlength="5" maxlength="50" required></label>
+                <label>ANTAL MÅNEDER <select name="select" id="select" required>
+                    <option value="tre">3 MÅNEDER</option>
+                    <option value="seks">6 MÅNEDER</option>
+                    <option value="tolv">12 MÅNEDER</option>
+                </select> 
+                </label>
+                <input type="submit" value="KØB ABONNEMENT">
+                <!-- Div for success message -->
+                <div class="msg"></div>
+            </form>
+        </div>
+    </section>
+    <!-- FORM END -->
+
+    <!-- FOOTER START -->
+    <footer>
+        <!-- footer-contact contains phone and email contacts -->
+        <div class="footer-contact">
+            <p class="footer-heading">Kontakt os</p>
+            <div class="footer-text">
+                <p>Telefon</p>
+                <p>+45 23 54 76 78</p>
+            </div>
+            <div class="footer-text">
+                <p>Email</p>
+                <p>Info@info.dk</p>
+            </div>
+        </div>
+        <!-- footer-information contains information and 3 links -->
+        <div class="footer-information">
+            <p class="footer-heading">Information</p>
+                <a href="linkpoint.html"><p class="footer-text">Abonnementer</p></a>
+                <a href="linkpoint.html"><p class="footer-text">Nyhedsbrev</p></a>
+                <a href="linkpoint.html"><p class="footer-text">Annoncering</p></a>
+        </div>
+        <!-- Footer-social contains the logo and facebook,ig logoes -->
+        <div class="footer-social">
+            <img class="footer-logo" src="assets/logo/BoligBladetLogo-White.png" alt="Boligbladet logo">
+            <div class="footer-social-icon">
+                <a href="linkpoint.html"><img src="assets/icons/icons8-facebook-24.svg" alt="Facebook logo"></a>
+                <a href="linkpoint.html"><img src="assets/icons/icons8-instagram-24.svg" alt="Instagram logo"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+</body>
+</html>
